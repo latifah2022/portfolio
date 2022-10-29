@@ -7,7 +7,7 @@ export default function Footer() {
                 <li>
                     <a>GitHub Icon</a>
                     <a>Linkedn Icon</a>
-                    <a>Twitter</a>
+                    <a>Twitter icon</a>
                 </li>
             </ul>
         </div>
