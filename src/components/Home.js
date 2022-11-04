@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import woman image
-import WomanImg from '../assets/images';
+import WomanImg from '../images/woman.png';
 
 const Home = () => {
     return (
@@ -27,12 +27,17 @@ const Home = () => {
                     </button>
                     </div>
                 <div className='hidden lg:flex flex-1 justify-end items-end h-full'>
-                    <img src={WomanImg} alt='' />
+                    <img style={styles.imageWidth} src={WomanImg} alt='my image' />
                 </div>
                 </div>
             </div>
         </section>
     );
 };
+const styles= {
+    imageWidth: {
+      width: 100,
+    },
+  }
 
 export default Home;

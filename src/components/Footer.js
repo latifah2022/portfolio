@@ -4,7 +4,7 @@ import React from 'react';
 import { social } from '../data';
 
 // import logo
-import Logo from '../assets/img/logo.svg';
+import Logo from '../images/logo.mp4';
 
 const Footer = () => {
     return (

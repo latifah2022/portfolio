@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { projectsData } from '../data';
 import { projectsNav } from '../data';
 
-import Project from './Project';
+import Project from './Work';
 
 const Projects = () => {
     const [item, setItem] = useState({ name: 'all' });

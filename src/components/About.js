@@ -1,7 +1,7 @@
 import React from 'react';
 
 // import img
-import Image from '../';
+import Image from '../images/logo.mp4';
 
 const About = () => {
     return (
