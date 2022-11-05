@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/latifah2022/portfolio/static/css/main.9eb2f06c.css",
-    "main.js": "/latifah2022/portfolio/static/js/main.fb11168e.js",
-    "static/media/p2.jpg": "/latifah2022/portfolio/static/media/p2.e41210c3d62aed70e627.jpg",
-    "static/media/woman.jpg": "/latifah2022/portfolio/static/media/woman.3b241bf2307ec19c8052.jpg",
-    "static/media/p6.jpg": "/latifah2022/portfolio/static/media/p6.44b7008fd25cc71ac2a9.jpg",
-    "static/media/p1.jpg": "/latifah2022/portfolio/static/media/p1.dbc78e7b3570ae7b52db.jpg",
-    "static/media/p3.jpg": "/latifah2022/portfolio/static/media/p3.e3b89934bea39f3c7f31.jpg",
-    "static/media/p5.jpg": "/latifah2022/portfolio/static/media/p5.afdb834419160e11bee4.jpg",
-    "static/media/p4.jpg": "/latifah2022/portfolio/static/media/p4.ac1ae7cf043e12d6bcc2.jpg",
-    "static/media/logo.mp4": "/latifah2022/portfolio/static/media/logo.bb2cffccfcf05b12df99.mp4",
+    "main.js": "/latifah2022/portfolio/static/js/main.8fae3f21.js",
+    "static/media/woman.png": "/latifah2022/portfolio/static/media/woman.31b1dd6bb1544bb75033.png",
+    "static/media/p1.webp": "/latifah2022/portfolio/static/media/p1.52f0f3a89c11044c2037.webp",
+    "static/media/p5.webp": "/latifah2022/portfolio/static/media/p5.40f22911cc8104bfdf42.webp",
+    "static/media/p3.webp": "/latifah2022/portfolio/static/media/p3.05179f007af7cd2ad2a6.webp",
+    "static/media/p4.webp": "/latifah2022/portfolio/static/media/p4.373ffd063f14c91c84c5.webp",
+    "static/media/p6.webp": "/latifah2022/portfolio/static/media/p6.26fcf4320bfa0eacc03a.webp",
+    "static/media/p2.webp": "/latifah2022/portfolio/static/media/p2.987c883e6e66df8a1228.webp",
     "index.html": "/latifah2022/portfolio/index.html",
     "main.9eb2f06c.css.map": "/latifah2022/portfolio/static/css/main.9eb2f06c.css.map",
-    "main.fb11168e.js.map": "/latifah2022/portfolio/static/js/main.fb11168e.js.map"
+    "main.8fae3f21.js.map": "/latifah2022/portfolio/static/js/main.8fae3f21.js.map"
   },
   "entrypoints": [
     "static/css/main.9eb2f06c.css",
-    "static/js/main.fb11168e.js"
+    "static/js/main.8fae3f21.js"
   ]
 }
