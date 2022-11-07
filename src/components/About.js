@@ -1,7 +1,8 @@
 import React from 'react';
 
+
 // import img
-import Image from '../images/logo.mp4';
+import Image from '../images/logo.png';
 
 const About = () => {
     return (
@@ -10,6 +11,7 @@ const About = () => {
                 <div className='flex flex-col xl:flex-row gap-24'>
                         <img
                             className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl'
+                            style={styles.imageWidth}
                             src={Image}
                             alt=''
                         />
@@ -42,5 +44,11 @@ const About = () => {
         </section>
     );
 };
+
+const styles= {
+    imageWidth: {
+        width: 100,
+    },
+}
 
 export default About;

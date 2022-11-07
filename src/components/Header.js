@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 // import components
-import Logo from '../images/logo.mp4';
+import Logo from '../images/logo.png';
 import Navbar from '../components/Navbar';
 import NavMobile from '../components/NavMobile';
 import Socials from './Socials';
@@ -17,11 +17,11 @@ const Header = () => {
 
     return (
         <header
-            className={`${bg ? 'bg-tertiary h-20' : 'h-24'} flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}>
+            className={`${bg ? 'bg-tertiary h-10' : 'h-24'} flex items-center fixed top-0 w-full text-white z-10 transition-all duration-300`}>
             <div className='container mx-auto h-full flex items-center justify-between'>
             {/* logo */}
-            <a href='#'>
-                <img src={Logo} alt='' />
+            <a href='#home'>
+                <img style={styles.imageWidth} src={Logo} alt='my logo' />
             </a>
             {/* nav */}
             <div className='hidden lg:block'>
@@ -39,5 +39,11 @@ const Header = () => {
         </header>
   );
 };
+
+const styles= {
+    imageWidth: {
+      width: 100,
+    },
+}
 
 export default Header;

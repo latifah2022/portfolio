@@ -7,9 +7,8 @@ const Home = () => {
     return (
         <section
             id='home'
-            className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'
-        >
-        <div className='container mx-auto h-full'>
+            className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'>
+            <div className='container mx-auto h-full'>
             <div className='flex items-center h-full pt-8'>
                 <div className='flex-1 flex flex-col items-center lg:items-start'>
                     <p className='text-lg text-accent text-md mb-[22px]'>
@@ -36,7 +35,7 @@ const Home = () => {
 };
 const styles= {
     imageWidth: {
-      width: 100,
+      width: 200,
     },
   }
 

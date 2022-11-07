@@ -4,7 +4,8 @@ import React from 'react';
 import { social } from '../data';
 
 // import logo
-import Logo from '../images/logo.mp4';
+import Logo from '../images/logo.png';
+
 
 const Footer = () => {
     return (
@@ -22,7 +23,7 @@ const Footer = () => {
                             })}
                     </div>
                     <div>
-                        <img src={Logo} alt='' />
+                        <img style={styles.imageWidth} src={Logo} alt='' />
                     </div>
                     <p className='text-paragraph opacity-80 text-[15px]'>
                         &copy; 2022 Cristian Mihai. All rights reserved.
@@ -32,5 +33,11 @@ const Footer = () => {
         </footer>
     );
 };
+
+const styles= {
+    imageWidth: {
+        width: 100,
+    },
+}
 
 export default Footer;

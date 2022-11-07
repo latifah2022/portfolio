@@ -23,6 +23,8 @@ const App = () => {
       <Contact />
       <Footer />
       <Scroll />
+      <div style={{ height: "2000px"}}></div>
+
     </div>
   );
 };
