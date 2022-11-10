@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import NavMobile from './NavMobile'
 
 const Header = () => {
   return (
@@ -7,8 +8,11 @@ const Header = () => {
         <div>
             <h1 className='text-4xl font-sin ml-2'>Latifah</h1>
         </div>
-        <div>
+        <div className='hidden lg:block'>
             <Navbar />
+        </div>
+        <div>
+            <NavMobile />
         </div>
 
 
