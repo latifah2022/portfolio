@@ -8,6 +8,7 @@ import Portfolio from "./componets/Portfolio";
 import Services from "./componets/Services";
 import Contact from "./componets/Contact";
 import Footer from "./componets/Footer";
+import Scroll from "./componets/Scroll";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Services />
       <Contact />
       <Footer />
+      <Scroll />
     </div>
   );
 }

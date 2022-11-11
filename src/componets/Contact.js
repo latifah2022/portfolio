@@ -37,7 +37,7 @@ const Contact = () => {
                     </div>
                     <input className='input' type='text' placeholder='Subject' />
                     <textarea className='textarea' placeholder='Your message'></textarea>
-                    <button className='btn btn-lg bg-gray-500 hover:bg-gray-hover'>
+                    <button className='btn m-2 btn-lg bg-gray-500 hover:bg-gray-hover'>
                         Send message
                     </button>
                 </form>
