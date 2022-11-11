@@ -1,5 +1,6 @@
 import React from 'react'
-import WomanImg from "../images/hero/heros.webp"
+import WomanImg from "../images/hero/heros.webp";
+//import { HiArrowSmRight } from "react-icons"
 
 const Home = () => {
   return (
@@ -24,6 +25,9 @@ const Home = () => {
                     <div className='hidden lg:flex flex-1 justify-end items-end h-full'>
                         <img src={WomanImg} alt='mine' />
                     </div>
+                    {/* <span className="group-hover:rotate-90 duration-300">
+                        <HiArrowSmRight size={25} className="ml-1" />
+                     </span> */}
                 </div>
 
             </div>
