@@ -8,8 +8,8 @@ import {
     FiLinkedin,
     //FiPenTool,
     // FiTag,
-    // FiMail,
-    // FiMapPin,
+    FiMail,
+    FiMapPin,
   } from 'react-icons/fi';
   
 //   // companies icons
@@ -251,18 +251,18 @@ export const projectsNav = [
 //     },
 //   ];
   
-//   // contact
-//   export const contact = [
-//     {
-//       icon: <FiMail />,
-//       title: 'Have a question?',
-//       subtitle: 'I am here to help you.',
-//       description: 'Email me at hello@youremail.com',
-//     },
-//     {
-//       icon: <FiMapPin />,
-//       title: 'Current Location',
-//       subtitle: 'Bucharest, Romania',
-//       description: 'Serving clients worldwide',
-//     },
-//   ];
+// contact
+export const contact = [
+    {
+      icon: <FiMail />,
+      title: 'Have a question?',
+      subtitle: 'I am here to help you.',
+      description: 'Email me at hello@youremail.com',
+    },
+    {
+      icon: <FiMapPin />,
+      title: 'Current Location',
+      subtitle: 'Bucharest, Romania',
+      description: 'Serving clients worldwide',
+    },
+];
