@@ -7,6 +7,7 @@ import Skills from "./componets/Skills";
 import Portfolio from "./componets/Portfolio";
 import Services from "./componets/Services";
 import Contact from "./componets/Contact";
+import Footer from "./componets/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Portfolio />
       <Services />
       <Contact />
+      <Footer />
     </div>
   );
 }
