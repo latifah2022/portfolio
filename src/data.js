@@ -1,16 +1,16 @@
 //  icons
-// import {
-//     FiYoutube,
-//     FiInstagram,
-//     FiGithub,
-//     FiDribbble,
-//     FiLayout,
-//     FiSettings,
-//     FiPenTool,
-//     FiTag,
-//     FiMail,
-//     FiMapPin,
-//   } from 'react-icons/fi';
+import {
+    FiInstagram,
+    FiGithub,
+    FiTwitter,
+    //FiLayout,
+    //FiSettings,
+    FiLinkedin,
+    //FiPenTool,
+    // FiTag,
+    // FiMail,
+    // FiMapPin,
+  } from 'react-icons/fi';
   
 //   // companies icons
 //   import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
@@ -71,24 +71,24 @@
   ];
   
 //   // social
-//   export const social = [
-//     {
-//       icon: <FiYoutube />,
-//       href: '',
-//     },
-//     {
-//       icon: <FiInstagram />,
-//       href: '',
-//     },
-//     {
-//       icon: <FiGithub />,
-//       href: '',
-//     },
-//     {
-//       icon: <FiDribbble />,
-//       href: '',
-//     },
-//   ];
+  export const social = [
+    {
+        icon: <FiLinkedin />,
+        href: '',
+      },
+    {
+      icon: <FiInstagram />,
+      href: '',
+    },
+    {
+      icon: <FiGithub />,
+      href: '',
+    },
+    {
+      icon: <FiTwitter />,
+      href: '',
+    },
+  ];
   
 //   // companies
 //   export const brands = [

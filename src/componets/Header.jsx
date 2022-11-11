@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import NavMobile from './NavMobile'
+import Socials from './Socials'
 
 const Header = () => {
   return (
@@ -11,7 +12,11 @@ const Header = () => {
         <div className='hidden lg:block'>
             <Navbar />
         </div>
-        <div>
+        <div className='hidden lg:block' >
+            <Socials />
+        </div>
+
+        <div className='lg:hidden'>
             <NavMobile />
         </div>
 
@@ -20,4 +25,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
