@@ -28,7 +28,7 @@ const About = () => {
                 cupiditate ratione esse maxime eum recusandae ducimus.
               </p> 
             </div>
-            <button className='btn btn-md bg-cyan-100 hover:bg-secondary-hover transition-all'>
+            <button className='btn btn-md bg-gray-500 my-4 hover:bg-secondary-hover transition-all'>
               Contact me
             </button>
           </div>
