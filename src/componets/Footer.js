@@ -4,7 +4,7 @@ import Logo from "../images/Logo/logo.png";
 
 const Footer = () => {
     return (
-        <footer className='bg-gray-500 py-5'>
+        <footer className='bg-gray-700 py-3 h-25'>
             <div className='container mx-auto'>
                 <div className='flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between'>
                     <div className='flex space-x-6 items-center justify-center'>
@@ -17,10 +17,10 @@ const Footer = () => {
                         })}
                     </div>
                     <div>
-                        <img className='flex bg-slate-50 w-50 h-20' src={Logo} alt='' />
+                        <img className='flex w-30 h-20' src={Logo} alt='logo' />
                     </div>
                     <p className='text-paragraph opacity-80 text-[15px]'>
-                         &copy; 2022 Cristian Mihai. All rights reserved.
+                        &copy; 2022  Quin Latifah Zawedde. All rights reserved.
                     </p>
                 </div>
             </div>

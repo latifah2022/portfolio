@@ -1,6 +1,6 @@
-//  icons
+///  icons
 import {
-    FiInstagram,
+    //FiInstagram,
     FiGithub,
     FiTwitter,
     //FiLayout,
@@ -36,6 +36,9 @@ import SkillImg5 from './images/skills/nextjs.png';
 import SkillImg6 from './images/skills/nodejs.png';
 import SkillImg7 from './images/skills/git.png';
 import SkillImg8 from './images/skills/figma.png';
+
+// links 
+
   
 //   // testimonial images
 //   import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
@@ -61,10 +64,6 @@ export const navigation = [
       href: 'services',
     },
     {
-      name: 'resume',
-      href: 'resume',
-    },
-    {
       name: 'contact',
       href: 'contact',
     },
@@ -74,20 +73,24 @@ export const navigation = [
 export const social = [
     {
         icon: <FiLinkedin />,
-        href: '',
+        href: 'https://www.linkedin.com/in/latifah-zawedde/',
       },
-    {
-      icon: <FiInstagram />,
-      href: '',
-    },
+    // {
+    //   icon: <FiInstagram />,
+    //   href: '',
+    // },
     {
       icon: <FiGithub />,
-      href: '',
+      href: 'https://github.com/latifah2022',
     },
     {
       icon: <FiTwitter />,
-      href: '',
+      href: 'https://twitter.com/latifah_z',
     },
+    {
+      icon: <FiMail />,
+      href: 'mailto:zawedde2021@gmail.com'
+    }
   ];
   
 //   // companies
@@ -119,38 +122,50 @@ export const projectsData = [
     {
       id: '1',
       image: Project1,
-      name: 'project name 1',
-      category: 'UI/UX design',
+      name: 'Food Adventure',
+      category: 'Full Stack',
+      demo: "https://github.com/cindyung56/food-adventure",
+      Code: 'https://cindyung56.github.io/food-adventure/'
     },
     {
       id: '2',
       image: Project2,
-      name: 'project name 2',
-      category: 'web development',
+      name: 'Book club',
+      category: 'Full Stack',
+      demo: "https://secret-harbor-07074.herokuapp.com/",
+      Code: 'https://github.com/latifah2022/book-club'
     },
     {
       id: '3',
       image: Project3,
       name: 'project name 3',
-      category: 'UI/UX design',
+      category: 'Frontend',
+      demo: "https://latifah2022.github.io/my-first-portfolio/",
+      Code: 'https://github.com/latifah2022/my-first-portfolio'
     },
     {
       id: '4',
       image: Project4,
-      name: 'project name 4',
-      category: 'branding',
+      name: 'E-commerce',
+      category: 'Backend',
+      demo: "#",
+      Code: 'https://github.com/latifah2022/e-commerce'
     },
     {
       id: '5',
       image: Project5,
-      name: 'project name 5',
-      category: 'web development',
+      name: 'Employee Tracker',
+      category: 'Backend',
+      demo: "#",
+      Code: 'https://github.com/latifah2022/employee-tracker'
     },
     {
       id: '6',
       image: Project6,
-      name: 'project name 6',
-      category: 'web development',
+      name: 'To-do List',
+      category: 'Full Stack',
+      demo: "https://serene-falls-35131.herokuapp.com/",
+      Code: 'https://github.com/christalledo/to-do-list-app'
     },
   ];
   
@@ -160,14 +175,17 @@ export const projectsNav = [
       name: 'all',
     },
     {
-      name: 'UI/UX Design',
+      name: 'Frontend',
     },
     {
       name: 'web development',
     },
     {
-      name: 'branding',
+      name: 'Backend',
     },
+    {
+      name: "Full Stack"
+    }
   ];
   
 //   // skill
@@ -257,12 +275,13 @@ export const contact = [
       icon: <FiMail />,
       title: 'Have a question?',
       subtitle: 'I am here to help you.',
-      description: 'Email me at hello@youremail.com',
+      description: 'Email me at zawedde2021@gmail.com',
+      href: 'mailto:zawedde2021@gmail.com',
     },
     {
       icon: <FiMapPin />,
       title: 'Current Location',
-      subtitle: 'Bucharest, Romania',
-      description: 'Serving clients worldwide',
+      subtitle: 'Los Angeles, California',
+      description: 'Willing to work remote.',
     },
 ];

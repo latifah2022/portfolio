@@ -1,9 +1,9 @@
 import React from 'react';
-import Image from '../images/hero/theee.webp';
+import Image from '../images/hero/nn.webp';
 
 const About = () => {
   return (
-    <section className='section bg-black text-cyan-500' id='about'>
+    <section className='section bg-gray-900 text-cyan-500' id='about'>
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-24'>
           <img
@@ -12,10 +12,10 @@ const About = () => {
           <div className='flex flex-col items-center text-center lg:items-start lg:text-left'>
           <div className='flex flex-col'>
               <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block'>
-                Jane Doe
+                Latifah zawedde
               </h2>
               <p className='mb-4 text-accent'>
-                Freelance Frontend Web Developer
+                Jounior Software Engineer
               </p>
               <hr className='mb-8 opacity-5' />
               <p className='mb-8'>

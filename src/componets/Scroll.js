@@ -15,7 +15,7 @@ const Scroll = () => {
         };
         return (
             <button  onClick={() => scrollToTop()}
-            className='bg-gray-700 hover:bg-accent-hover text-cyan-400 w-12 h-12 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all'>
+            className='bg-black hover:bg-accent-hover text-cyan-400 w-12 h-12 rounded-full fixed right-24 bottom-24 cursor-pointer flex justify-center items-center transition-all'>
                  <ChevronUpIcon className='w-6 h-6' />
             </button>
         )
