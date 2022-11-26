@@ -124,8 +124,8 @@ export const projectsData = [
       image: Project1,
       name: 'Food Adventure',
       category: 'Full Stack',
-      demo: "https://github.com/cindyung56/food-adventure",
-      Code: 'https://cindyung56.github.io/food-adventure/'
+      code: "https://github.com/cindyung56/food-adventure",
+      demo: 'https://cindyung56.github.io/food-adventure/'
     },
     {
       id: '2',
@@ -133,15 +133,15 @@ export const projectsData = [
       name: 'Book club',
       category: 'Full Stack',
       demo: "https://secret-harbor-07074.herokuapp.com/",
-      Code: 'https://github.com/latifah2022/book-club'
+      code: 'https://github.com/latifah2022/book-club'
     },
     {
       id: '3',
       image: Project3,
-      name: 'project name 3',
-      category: 'Frontend',
+      name: 'Portfolio',
+      category: 'web development',
       demo: "https://latifah2022.github.io/my-first-portfolio/",
-      Code: 'https://github.com/latifah2022/my-first-portfolio'
+      code: 'https://github.com/latifah2022/my-first-portfolio'
     },
     {
       id: '4',
@@ -149,7 +149,7 @@ export const projectsData = [
       name: 'E-commerce',
       category: 'Backend',
       demo: "#",
-      Code: 'https://github.com/latifah2022/e-commerce'
+      code: 'https://github.com/latifah2022/e-commerce'
     },
     {
       id: '5',
@@ -157,7 +157,7 @@ export const projectsData = [
       name: 'Employee Tracker',
       category: 'Backend',
       demo: "#",
-      Code: 'https://github.com/latifah2022/employee-tracker'
+      code: 'https://github.com/latifah2022/employee-tracker'
     },
     {
       id: '6',
@@ -165,9 +165,43 @@ export const projectsData = [
       name: 'To-do List',
       category: 'Full Stack',
       demo: "https://serene-falls-35131.herokuapp.com/",
-      Code: 'https://github.com/christalledo/to-do-list-app'
+      code: 'https://github.com/christalledo/to-do-list-app'
     },
-  ];
+];
+
+// export const links = [
+//   {
+//     id: "1",
+//     demo: "https://github.com/cindyung56/food-adventure",
+//     code:  'https://cindyung56.github.io/food-adventure/',
+//   },
+//   {
+//     id: '2',
+//     demo: "https://secret-harbor-07074.herokuapp.com/",
+//     code: 'https://github.com/latifah2022/book-club'
+//   },
+//   {
+//     id: '3',
+//     demo: "https://latifah2022.github.io/my-first-portfolio/",
+//     code: 'https://github.com/latifah2022/my-first-portfolio'
+//   },
+//   {
+//     id: '4',
+//     demo: "#",
+//     code: 'https://github.com/latifah2022/e-commerce'
+//   },
+//   {
+//     id: '5',
+//     demo: "#",
+//     Code: 'https://github.com/latifah2022/employee-tracker'
+//   },
+//   {
+//     id: '6',
+//     demo: "https://serene-falls-35131.herokuapp.com/",
+//     Code: 'https://github.com/christalledo/to-do-list-app'
+//   }
+
+// ]
   
 //   // projects
 export const projectsNav = [

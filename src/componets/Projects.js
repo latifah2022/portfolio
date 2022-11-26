@@ -27,7 +27,7 @@ const Projects = () => {
 
     return (
         <section>
-            <nav className='mb-12 bg-slate-800 max-w-xl mx-auto'>
+            <nav className='mb-12 bg-slate-800 mx-auto'>
                 <ul className='flex flex-col md:flex-row justify-evenly items-center text-white'>
                     {projectsNav.map((item, index) => {
                         return (

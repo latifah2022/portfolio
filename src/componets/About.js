@@ -14,10 +14,10 @@ const About = () => {
               <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block'>
                 Latifah zawedde
               </h2>
-              <p className='mb-4 text-accent'>
+              <p className='mb-4 '>
                 Jounior Software Engineer
               </p>
-              <hr className='mb-8 opacity-5' />
+              <hr className='mb-8 opacity-6' />
               <p className='mb-8'>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
                 earum dolorum quo consequatur rem nihil hic ducimus rerum soluta
@@ -28,9 +28,9 @@ const About = () => {
                 cupiditate ratione esse maxime eum recusandae ducimus.
               </p> 
             </div>
-            <button className='btn btn-md bg-gray-500 my-4 hover:bg-secondary-hover transition-all'>
+            {/* <button id='contact' className='btn btn-md bg-gray-500 my-4 hover:bg-secondary-hover transition-all'>
               Contact me
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
