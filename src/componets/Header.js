@@ -6,7 +6,7 @@ import Logo from "../images/Logo/logo.png"
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-cyan-500 bg-gray-600">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-gray-700">
         <div>
             <img className='flex w-30 h-10' src={Logo} alt='' />
         </div>

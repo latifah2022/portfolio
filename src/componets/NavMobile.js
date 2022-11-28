@@ -76,7 +76,7 @@ const NavMobile = () => {
                         smooth={true}
                         duration={500}
                         offset={-70}
-                        className='text-xl cursor-pointer text-cyan-500 hover:scale-105 capitalize'>
+                        className='text-xl cursor-pointer hover:scale-105 capitalize'>
                     {item.name}
                     </Link>
                     </li>

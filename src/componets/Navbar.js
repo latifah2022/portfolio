@@ -9,7 +9,7 @@ const Navbar = () => {
       <ul className='flex'>
         {navigation.map((item, index) => {
           return (
-            <li className='px-2 cursor-pointer capitalize font-small text-cyan-500 hover:scale-105 '>
+            <li className='px-2 cursor-pointer capitalize font-small  hover:scale-105 '>
               <Link
               to={item.href}
               activeClass='active'

@@ -3,22 +3,11 @@ import {
     //FiInstagram,
     FiGithub,
     FiTwitter,
-    //FiLayout,
-    //FiSettings,
     FiLinkedin,
-    //FiPenTool,
-    // FiTag,
     FiMail,
     FiMapPin,
-  } from 'react-icons/fi';
-  
-//   // companies icons
-//   import FreelancerBrandIcon from './assets/img/brands/freelancer.png';
-//   import UpworkBrandIcon from './assets/img/brands/upwork.png';
-//   import FiverBrandIcon from './assets/img/brands/fiverr.png';
-//   import BehanceBrandIcon from './assets/img/brands/behance.png';
-//   import DribbbleBrandIcon from './assets/img/brands/dribbble.png';
-  
+} from 'react-icons/fi';
+
 //   // projects images
 import Project1 from './images/projects/p1.webp';
 import Project2 from './images/projects/p2.webp';
@@ -37,14 +26,6 @@ import SkillImg6 from './images/skills/nodejs.png';
 import SkillImg7 from './images/skills/git.png';
 import SkillImg8 from './images/skills/figma.png';
 
-// links 
-
-  
-//   // testimonial images
-//   import TestiImage1 from './assets/img/testimonials/testimonial-1.webp';
-//   import TestiImage2 from './assets/img/testimonials/testimonial-2.webp';
-//   import TestiImage3 from './assets/img/testimonials/testimonial-3.webp';
-  
   // navigation
 export const navigation = [
     {
@@ -60,14 +41,14 @@ export const navigation = [
       href: 'portfolio',
     },
     {
-      name: 'services',
-      href: 'services',
+      name: 'exprience',
+      href: 'exprience',
     },
     {
       name: 'contact',
       href: 'contact',
     },
-  ];
+];
   
 //   // social
 export const social = [
@@ -91,7 +72,7 @@ export const social = [
       icon: <FiMail />,
       href: 'mailto:zawedde2021@gmail.com'
     }
-  ];
+];
   
 //   // companies
 //   export const brands = [
@@ -169,39 +150,6 @@ export const projectsData = [
     },
 ];
 
-// export const links = [
-//   {
-//     id: "1",
-//     demo: "https://github.com/cindyung56/food-adventure",
-//     code:  'https://cindyung56.github.io/food-adventure/',
-//   },
-//   {
-//     id: '2',
-//     demo: "https://secret-harbor-07074.herokuapp.com/",
-//     code: 'https://github.com/latifah2022/book-club'
-//   },
-//   {
-//     id: '3',
-//     demo: "https://latifah2022.github.io/my-first-portfolio/",
-//     code: 'https://github.com/latifah2022/my-first-portfolio'
-//   },
-//   {
-//     id: '4',
-//     demo: "#",
-//     code: 'https://github.com/latifah2022/e-commerce'
-//   },
-//   {
-//     id: '5',
-//     demo: "#",
-//     Code: 'https://github.com/latifah2022/employee-tracker'
-//   },
-//   {
-//     id: '6',
-//     demo: "https://serene-falls-35131.herokuapp.com/",
-//     Code: 'https://github.com/christalledo/to-do-list-app'
-//   }
-
-// ]
   
 //   // projects
 export const projectsNav = [
@@ -278,30 +226,7 @@ export const projectsNav = [
 //     },
 //   ];
   
-//   // testimonials
-//   export const testimonials = [
-//     {
-//       authorImg: TestiImage1,
-//       authorText:
-//         'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-//       authorName: 'Olivia Doe',
-//       authorPosition: 'Head of Design, Google',
-//     },
-//     {
-//       authorImg: TestiImage2,
-//       authorText:
-//         'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-//       authorName: 'Olivia Doe',
-//       authorPosition: 'Head of Design, Google',
-//     },
-//     {
-//       authorImg: TestiImage3,
-//       authorText:
-//         'Love the simplicity of the service and the prompt customer support. We can’t imagine working without it.',
-//       authorName: 'Olivia Doe',
-//       authorPosition: 'Head of Design, Google',
-//     },
-//   ];
+
   
 // contact
 export const contact = [
