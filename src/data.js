@@ -53,13 +53,9 @@ export const navigation = [
 //   // social
 export const social = [
     {
-        icon: <FiLinkedin />,
-        href: 'https://www.linkedin.com/in/latifah-zawedde/',
-      },
-    // {
-    //   icon: <FiInstagram />,
-    //   href: '',
-    // },
+      icon: <FiLinkedin />,
+      href: 'https://www.linkedin.com/in/latifah-zawedde/',
+    },
     {
       icon: <FiGithub />,
       href: 'https://github.com/latifah2022',
@@ -120,7 +116,7 @@ export const projectsData = [
       id: '3',
       image: Project3,
       name: 'Portfolio',
-      category: 'web development',
+      category: 'Frontend',
       demo: "https://latifah2022.github.io/my-first-portfolio/",
       code: 'https://github.com/latifah2022/my-first-portfolio'
     },
@@ -166,7 +162,7 @@ export const projectsNav = [
       name: 'Backend',
     },
     {
-      name: "Full Stack"
+      name: "Full Stack",
     }
   ];
   
@@ -232,9 +228,9 @@ export const projectsNav = [
 export const contact = [
     {
       icon: <FiMail />,
-      title: 'Have a question?',
-      subtitle: 'I am here to help you.',
-      description: 'Email me at zawedde2021@gmail.com',
+      title: 'Reach Me',
+      subtitle: 'Looking foward to woking with you.',
+      description: 'Email: zawedde2021@gmail.com',
       href: 'mailto:zawedde2021@gmail.com',
     },
     {
