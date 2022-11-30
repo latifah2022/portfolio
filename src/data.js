@@ -96,8 +96,16 @@ export const social = [
   
 //   // projects
 export const projectsData = [
+  {
+    id: '1',
+    image: Project6,
+    name: 'Tarah',
+    category: 'Full Stack',
+    demo: "https://latifah2022.github.io/tarah/",
+    code: 'https://github.com/latifah2022/tarah'
+  },
     {
-      id: '1',
+      id: '2',
       image: Project1,
       name: 'Food Adventure',
       category: 'Full Stack',
@@ -105,7 +113,7 @@ export const projectsData = [
       demo: 'https://cindyung56.github.io/food-adventure/'
     },
     {
-      id: '2',
+      id: '3',
       image: Project2,
       name: 'Book club',
       category: 'Full Stack',
@@ -113,15 +121,15 @@ export const projectsData = [
       code: 'https://github.com/latifah2022/book-club'
     },
     {
-      id: '3',
+      id: '4',
       image: Project3,
       name: 'Portfolio',
-      category: 'Frontend',
+      category: 'web development',
       demo: "https://latifah2022.github.io/my-first-portfolio/",
       code: 'https://github.com/latifah2022/my-first-portfolio'
     },
     {
-      id: '4',
+      id: '5',
       image: Project4,
       name: 'E-commerce',
       category: 'Backend',
@@ -129,7 +137,7 @@ export const projectsData = [
       code: 'https://github.com/latifah2022/e-commerce'
     },
     {
-      id: '5',
+      id: '6',
       image: Project5,
       name: 'Employee Tracker',
       category: 'Backend',
@@ -137,12 +145,20 @@ export const projectsData = [
       code: 'https://github.com/latifah2022/employee-tracker'
     },
     {
-      id: '6',
+      id: '7',
       image: Project6,
       name: 'To-do List',
       category: 'Full Stack',
       demo: "https://serene-falls-35131.herokuapp.com/",
       code: 'https://github.com/christalledo/to-do-list-app'
+    },
+    {
+      id: '8',
+      image: Project6,
+      name: 'Potfolio',
+      category: 'Full Stack',
+      demo: "https://latifah2022.github.io/portfolio/",
+      code: 'https://github.com/latifah2022/portfolio'
     },
 ];
 
