@@ -3,37 +3,41 @@ import Image from '../images/hero/mine.png';
 
 const About = () => {
   return (
-    <section className='section bg-gray-900  text-cyan-500' id='about'>
-      <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row gap-24'>
+    <section className='section  bg-gray-900  text-cyan-500' id='about'>
+       <h1 className='flex  justify-center'> About Me</h1>
+        <div className='container flex flex-col xl:flex-row gap-24'>
           <img
             className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl'
             src={Image} alt=''/>
           <div className='flex flex-col items-center text-center lg:items-start lg:text-left'>
-          <div className='flex  m-3 flex-col'>
-              <h2 className='text-3xl lg:text-4xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-40 before:-top-[2rem] before:hidden before:lg:block'>
+            <div className='flex  m-2 flex-col'>
+              <h4 className='text-3xl lg:text-3xl font-medium lg:font-extrabold mb-3 before:content-about relative before:absolute before:opacity-10 before:-top-[2rem] before:hidden before:lg:block'>
                 Latifah zawedde
-              </h2>
+              </h4>
               <p className='mb-4 '>
                 Jounior Software Engineer
               </p>
               <hr className='mb-8 opacity-6' />
-              <p className='mb-8'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit tempore
-                earum dolorum quo consequatur rem nihil hic ducimus rerum soluta
-                neque harum velit molestiae dignissimos distinctio dolorum nisi
-                labore culpa nihil. <br />
-                <br />
-                Qui doloremque quod sit accusantium unde totam inventore
-                cupiditate ratione esse maxime eum recusandae ducimus.
-              </p> 
+              <div className='lg:text-2xl'>
+                <p className='mb-8'>
+                  Hello, I am a Junior Software Engineer currently based in Los Angeles, CA but also welcoming remote opportunites. 
+                  <br />
+                  <br />
+                  I have recently just complete a Software Engineering certificate from the University of California Los Angeles (UCLA) Extension program.
+                  <br />
+                  And even though I learn a number of skillsets during my course like my SQL, NoSQL, Data Structures,Web Development, Frontend and Backend.
+                  <br /> 
+                  <br />
+                  I am focusing on Full Stack Development becuse it helps me put all my soft skils to work like creativity, teamwork,
+                  willingness to learn,time management, problem solving, decision making, conflict resolution, Effective comunication, Responsibility.
+                  <br />
+                </p> 
+              </div>
             </div>
-            {/* <button id='contact' className='btn btn-md bg-gray-500 my-4 hover:bg-secondary-hover transition-all'>
-              Contact me
-            </button> */}
+            <a href='#contact' className='btn  p-2 rounded-2xl bg-black my-4  transition-all'> Contact me</a>
           </div>
         </div>
-      </div>
+      
     </section>
   )
 }

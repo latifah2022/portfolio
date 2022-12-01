@@ -21,19 +21,21 @@ const Contact = () => {
                                 <div>
                                     <h2 className='font-body text-xl mb-1'>{title}</h2>
                                     <h5 className='mb-1 '>{subtitle}</h5>
-                                    <h5 className='font-normal'>{description}</h5>
+                                    <h5 className='font-normal'>
+                                        <a href={href}>{description}</a>
+                                    </h5>
                                     
                                 </div>
                             </div>
                         );
                     })}
                 </div>
-                <form className='space-y-8'>
-                    <div className='flex flex-col w-full md:w-1/2  gap-4'>
+                <form className='space-y-8 flex-row'>
+                    <div className='flex flex-col  md:w-1/2  gap-4'>
                         <input className='input rounded-2xl text-black' type='text' placeholder='Your name' />
                         <input className='input rounded-2xl text-black' type='email' placeholder='Your email' />
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 w-50'>
                         <input className='input rounded-2xl text-black' type='text' placeholder='Subject' />
                         <textarea className='textarea rounded-2xl text-black' placeholder='Your message'></textarea>
                         <button className='btn m-2 btn-lg bg-black hover:bg-gray-hover rounded-2xl'>

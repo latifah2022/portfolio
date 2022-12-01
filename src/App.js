@@ -5,7 +5,6 @@ import Home from "./componets/Home";
 import About from "./componets/About";
 import Skills from "./componets/Skills";
 import Portfolio from "./componets/Portfolio";
-import Services from "./componets/Services";
 import Contact from "./componets/Contact";
 import Footer from "./componets/Footer";
 import Scroll from "./componets/Scroll";

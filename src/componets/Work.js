@@ -7,8 +7,8 @@ const Work = ({item}) => {
                 <img className='rounded-2xl duration-200 hover:scale-105' src={item.image} alt='' />
                 <ul className='flex items-center justify-center'>
                     <li className='w-1/2 flex justify-between m-2 duration-200 hover:scale-105'>
-                        <a href={item.code} >Code</a>
-                        <a href={item.demo}>Demo</a>
+                        <a className='w-1/2 flex justify-between m-2 duration-200 hover:scale-105' href={item.code} >Code</a>
+                        <a className='w-1/2 flex justify-between m-2 duration-200 hover:scale-105'  href={item.demo}>Demo</a>
                     </li>
                 </ul>
                 <p className='capitalize text-accent text-sm mb-3'>{item.category}</p>

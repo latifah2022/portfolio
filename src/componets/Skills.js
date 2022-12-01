@@ -3,7 +3,7 @@ import { skills } from '../data';
 
 const Skills = () => {
     return (
-        <section className='bg-gray-500 py-5'>
+        <section className='bg-gray-500 py-1'>
             <div className='container mx-auto'>
                 <div className='grid grid-cols-8 md:grid-flow-col'>
                    {skills.map((skill, index) => {

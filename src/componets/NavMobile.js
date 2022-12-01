@@ -1,5 +1,4 @@
 
-
 import React, { useState } from 'react';
 
 // import icons
@@ -56,7 +55,7 @@ const NavMobile = () => {
             variants={circleVariants}
             initial='hidden'
             animate={isOpen ? 'visible' : 'hidden'}
-            className='w-4 h-4 rounded-full  bg-black fixed top-0 right-0'>
+            className='w-4 h-4 rounded-full  bg-gray-600 fixed top-0 right-0'>
             </motion.div>
     
             <motion.ul
@@ -76,7 +75,7 @@ const NavMobile = () => {
                         smooth={true}
                         duration={500}
                         offset={-70}
-                        className='text-xl cursor-pointer hover:scale-105 capitalize'>
+                        className='text-xl text-white cursor-pointer hover:scale-105 capitalize'>
                     {item.name}
                     </Link>
                     </li>

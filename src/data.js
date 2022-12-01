@@ -1,6 +1,5 @@
 ///  icons
 import {
-    //FiInstagram,
     FiGithub,
     FiTwitter,
     FiLinkedin,
@@ -50,7 +49,7 @@ export const navigation = [
     },
 ];
   
-//   // social
+  // social
 export const social = [
     {
       icon: <FiLinkedin />,
@@ -69,30 +68,6 @@ export const social = [
       href: 'mailto:zawedde2021@gmail.com'
     }
 ];
-  
-//   // companies
-//   export const brands = [
-//     {
-//       img: FreelancerBrandIcon,
-//       href: '',
-//     },
-//     {
-//       img: UpworkBrandIcon,
-//       href: '',
-//     },
-//     {
-//       img: FiverBrandIcon,
-//       href: '',
-//     },
-//     {
-//       img: BehanceBrandIcon,
-//       href: '',
-//     },
-//     {
-//       img: DribbbleBrandIcon,
-//       href: '',
-//     },
-//   ];
   
 //   // projects
 export const projectsData = [
@@ -245,8 +220,8 @@ export const contact = [
     {
       icon: <FiMail />,
       title: 'Reach Me',
-      subtitle: 'Looking foward to woking with you.',
-      description: 'Email: zawedde2021@gmail.com',
+      subtitle: 'Happy to work with you.',
+      description: 'Email me',
       href: 'mailto:zawedde2021@gmail.com',
     },
     {
