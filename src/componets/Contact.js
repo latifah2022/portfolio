@@ -21,10 +21,7 @@ const Contact = () => {
                                 <div>
                                     <h2 className='font-body text-xl mb-1'>{title}</h2>
                                     <h5 className='mb-1 '>{subtitle}</h5>
-                                    <h5 className='font-normal'>
-                                        <a href={href}>{description}</a>
-                                    </h5>
-                                    
+                                    <h5 className='font-normal'><a href={href}>{description}</a></h5>     
                                 </div>
                             </div>
                         );

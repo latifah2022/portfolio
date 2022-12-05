@@ -8,12 +8,14 @@ import {
 } from 'react-icons/fi';
 
 //   // projects images
-import Project1 from './images/projects/p1.webp';
-import Project2 from './images/projects/p2.webp';
-import Project3 from './images/projects/p3.webp';
-import Project4 from './images/projects/p4.webp';
-import Project5 from './images/projects/p5.webp';
-import Project6 from './images/projects/p6.webp';
+import Project1 from './images/projects/p11.jpg';
+import Project2 from './images/projects/p12.jpg';
+import Project3 from './images/projects/p13.jpg';
+import Project4 from './images/projects/p18.jpg';
+import Project5 from './images/projects/p15.jpg';
+import Project6 from './images/projects/p16.jpg';
+import Project7 from './images/projects/p17.jpg';
+
 
 //   // skills images
 import SkillImg1 from './images/skills/html5.png';
@@ -95,21 +97,22 @@ export const projectsData = [
       demo: "https://secret-harbor-07074.herokuapp.com/",
       code: 'https://github.com/latifah2022/book-club'
     },
-    {
-      id: '4',
-      image: Project3,
-      name: 'Portfolio',
-      category: 'web development',
-      demo: "https://latifah2022.github.io/my-first-portfolio/",
-      code: 'https://github.com/latifah2022/my-first-portfolio'
-    },
+    
     {
       id: '5',
-      image: Project4,
+      image: Project3,
       name: 'E-commerce',
       category: 'Backend',
       demo: "#",
       code: 'https://github.com/latifah2022/e-commerce'
+    },
+    {
+      id: '4',
+      image: Project4,
+      name: 'Portfolio',
+      category: 'web development',
+      demo: "https://latifah2022.github.io/my-first-portfolio/",
+      code: 'https://github.com/latifah2022/my-first-portfolio'
     },
     {
       id: '6',
@@ -121,19 +124,11 @@ export const projectsData = [
     },
     {
       id: '7',
-      image: Project6,
+      image: Project7,
       name: 'To-do List',
       category: 'Full Stack',
       demo: "https://serene-falls-35131.herokuapp.com/",
       code: 'https://github.com/christalledo/to-do-list-app'
-    },
-    {
-      id: '8',
-      image: Project6,
-      name: 'Potfolio',
-      category: 'Full Stack',
-      demo: "https://latifah2022.github.io/portfolio/",
-      code: 'https://github.com/latifah2022/portfolio'
     },
 ];
 
@@ -184,35 +179,6 @@ export const projectsNav = [
       image: SkillImg8,
     },
   ];
-  
-//   // services
-//   export const services = [
-//     {
-//       icon: <FiLayout />,
-//       name: 'Web Design',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//     },
-//     {
-//       icon: <FiSettings />,
-//       name: 'Web Development',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//     },
-//     {
-//       icon: <FiPenTool />,
-//       name: 'Branding',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//     },
-//     {
-//       icon: <FiTag />,
-//       name: 'SEO',
-//       description:
-//         'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio perferendis volm quibusdam ullam qui dolore.',
-//     },
-//   ];
-  
 
   
 // contact
@@ -221,13 +187,13 @@ export const contact = [
       icon: <FiMail />,
       title: 'Reach Me',
       subtitle: 'Happy to work with you.',
-      description: 'Email me',
+      description: 'Email me.',
       href: 'mailto:zawedde2021@gmail.com',
     },
     {
       icon: <FiMapPin />,
       title: 'Current Location',
-      subtitle: 'Los Angeles, California',
+      subtitle: 'Los Angeles, California.',
       description: 'Willing to work remote.',
     },
 ];
