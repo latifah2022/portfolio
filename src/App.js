@@ -8,6 +8,7 @@ import Portfolio from "./componets/Portfolio";
 import Contact from "./componets/Contact";
 import Footer from "./componets/Footer";
 import Scroll from "./componets/Scroll";
+import Experience from "./componets/Experience";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Experience />
       <Contact />
       <Footer />
       <Scroll />
