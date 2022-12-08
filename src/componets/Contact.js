@@ -1,45 +1,121 @@
 import React from 'react';
+import { useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import { contact } from "../data";
+import TrackVisibility from 'react-on-screen';
+
 
 const Contact = () => {
+    const formInitialDetails = {
+        fullName: '',
+        email: '',
+        subject: '',
+        message: ''
+      }
+      const [formDetails, setFormDetails] = useState(formInitialDetails);
+      const [buttonText, setButtonText] = useState('Send Messege');
+      const [status, setStatus] = useState({});
+    
+      const onFormUpdate = (category, value) => {
+          setFormDetails({
+            ...formDetails,
+            [category]: value
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setButtonText("Sending...");
+        let response = await fetch("http://localhost:5000/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=utf-8",
+          },
+          body: JSON.stringify(formDetails),
+        });
+        setButtonText("Send");
+        let result = await response.json();
+        setFormDetails(formInitialDetails);
+        if (result.code == 200) {
+          setStatus({ succes: true, message: 'Message sent successfully'});
+        } else {
+          setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
+        }
+    };
+    
   return (
-    <section className='section bg-gray-900 text-cyan-600' id='contact'>
+    <section className='contact bg-gray-900 text-cyan-600' id='contact'>
         <div className='container mx-auto'>
             <div className='flex flex-col items-center text-center'>
                 <h2 className='section-title m-3 before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
                     Contact Me
                 </h2>
             </div>
-            <div className='flex flex-col lg:gap-x-8 lg:flex-row'>
-                <div className='flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2'>
+            <div className='flex flex-col gap-8 lg:gap-x-2 lg:flex-row'>
+              <TrackVisibility>
+              {({ isVisible }) =>
+                <div className='flex flex-1 flex-col items-start space-y-2 mb-12 lg:mb-0 lg:pt-2 {isVisible ? "animate__animated animate__zoomIn" : ""}'>
                     {contact.map((item, index) => {const { icon, title, subtitle, description, href } = item;
                         return (
-                            <div className='flex flex-col lg:flex-row gap-x-4' key={index}>
-                                <div className='text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
+                            <div className='flex flex-col lg:flex-row gap-x-2' key={index}>
+                                <div className='text-accent rounded-sm w-10 h-5 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
                                     <a href={href}>{icon}</a>
                                 </div>
                                 <div>
                                     <h2 className='font-body text-xl mb-1'>{title}</h2>
-                                    <h5 className='mb-1 '>{subtitle}</h5>
-                                    <h5 className='font-normal'><a href={href}>{description}</a></h5>     
+                                    <h5 className='mb-1 text-lg'>{subtitle}</h5>
+                                    <h5 className='font-norma text-base'><a href={href}>{description}</a></h5>     
                                 </div>
                             </div>
                         );
                     })}
-                </div>
-                <form className='space-y-8 flex-row'>
-                    <div className='flex flex-col  md:w-1/2  gap-4'>
-                        <input className='input rounded-2xl text-black' type='text' placeholder='Your name' />
-                        <input className='input rounded-2xl text-black' type='email' placeholder='Your email' />
+                </div>}
+              </TrackVisibility>
+                <form className='space-y-8 flex-row items-end' onSubmit={handleSubmit}>
+                    <div  className='flex flex-col  md:w-1/2  gap-4'>
+                        <input className='input rounded-2xl text-black' value={formDetails.fullName} type='text' onChange={(e) => onFormUpdate('fullName', e.target.value)} placeholder='Your name' />
+                        <input className='input rounded-2xl text-black' value={formDetails.email} type='email' onChange={(e) => onFormUpdate('email', e.target.value)} placeholder='Your email' />
                     </div>
                     <div className='flex flex-col gap-4 w-50'>
-                        <input className='input rounded-2xl text-black' type='text' placeholder='Subject' />
-                        <textarea className='textarea rounded-2xl text-black' placeholder='Your message'></textarea>
-                        <button className='btn m-2 btn-lg bg-black hover:bg-gray-hover rounded-2xl'>
-                            Send message
+                        <input className='input rounded-2xl text-black'  type='text' value={formDetails.subject} onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder='Subject' />
+                        <textarea className='textarea rounded-2xl text-black' value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} placeholder='Your message'></textarea>
+                        <button type="submit" className='btn m-2 btn-lg bg-black hover:bg-gray-hover rounded-2xl'>
+                            <span>{buttonText}</span> 
                         </button>
                     </div>
+                    {
+                        status.message &&
+                        <Col>
+                            <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                        </Col>
+                    }
                 </form>
+                {/* <form  className='bg-transpalent' onSubmit={handleSubmit}>
+                  <Row>
+                    <Col size={12} sm={6} className="px-1 gap-2">
+                      <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
+                    </Col>
+                    <Col size={12} sm={6} className="px-1">
+                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
+                    </Col>
+                    <Col size={12} className="px-1">
+                      <textarea rows="6" value={formDetails.message} placeholder="Message " onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
+                      <button type="submit"><span>{buttonText}</span></button>
+                    </Col>
+                    {
+                      status.message &&
+                      <Col>
+                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
+                      </Col>
+                    }
+                  </Row>
+                </form> */}
             </div>
         </div>
     </section>

@@ -61,13 +61,13 @@ const Home = () => {
                     <h4 className='text-2xl leading-[44px] md:text-2xl md:leading-tight lg:text-4xl lg:leading-[1.2] font-bold md:tracking-[-2px]'>
                         <span className="wrap">{text}</span>
                     </h4>
-                    <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg text-center lg:text-left'>
+                    <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-base text-center lg:text-left'>
                         Motivated Junior Software Engineer to provide unique perspectives
                         on how end-users interact with websites and software platforms.
 
                     </p>
 
-                    <a  href={CV} download className='btn btn-md p-3 rounded-2xl bg-black hover:bg-secondary-hover md:btn-lg transition-all'>
+                    <a  href={CV} download className='btn btn-md text-2xl p-3 rounded-2xl bg-black hover:bg-secondary-hover md:btn-lg transition-all'>
                         Download CV 
                         {/* <RiDownloadCloudFill size={25} /> */}
                     </a> 

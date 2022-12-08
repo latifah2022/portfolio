@@ -27,8 +27,8 @@ const Projects = () => {
 
     return (
         <section>
-            <nav className='mb-12 bg-slate-800 mx-auto'>
-                <ul className='flex flex-col md:flex-row justify-evenly items-center text-white'>
+            <nav className='mb-5 bg-slate-800 mx-auto'>
+                <ul className='flex flex-col md:flex-row justify-evenly items-center text-xl text-white'>
                     {projectsNav.map((item, index) => {
                         return (
                             <li onClick={(e) => {handleClick(e, index)}}
@@ -40,7 +40,7 @@ const Projects = () => {
                     })}
                 </ul>
             </nav>
-            <div className='grid gap-y-12 bg-gray-700 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
+            <div className='grid gap-y-5 bg-gray-700 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
                 {projects.map((item) => {
                     return <Work item={item} key={item.id} />;
                 })}

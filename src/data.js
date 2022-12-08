@@ -27,6 +27,11 @@ import SkillImg6 from './images/skills/nodejs.png';
 import SkillImg7 from './images/skills/git.png';
 import SkillImg8 from './images/skills/figma.png';
 
+// experience images
+import meter1 from './images/experience/meter1.png';
+import meter2 from './images/experience/meter2.png';
+import meter3 from './images/experience/meter3.png';
+
   // navigation
 export const navigation = [
     {
@@ -180,6 +185,24 @@ export const projectsNav = [
     },
   ];
 
+export const experience = [
+  {
+    name: "Frontend Development",
+    image: meter1,
+  },
+  {
+    name: "Backend Deveplopment",
+    image: meter2,
+  },
+  {
+    name: "Full Stack Development",
+    image: meter3,
+  },
+  {
+    name: "Web Development",
+    image: meter2,
+  }
+]
   
 // contact
 export const contact = [
