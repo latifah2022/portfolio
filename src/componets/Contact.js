@@ -44,21 +44,24 @@ const Contact = () => {
     };
     
   return (
-    <section className='contact bg-gray-900 text-cyan-600' id='contact'>
-        <div className='container mx-auto'>
-            <div className='flex flex-col items-center text-center'>
-                <h2 className='section-title m-3 before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
+    <section className='contact  bg-cyan-800 text-black' id='contact'>
+        <h2 className='section-title  flex justify-center p-3 before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
+                    Contact Me
+        </h2>
+        <div className='container justify-evenly flex flex-col xl:flex-row mx-auto '>
+            {/* <div className='flex flex-col items-center text-center'>
+                <h2 className='section-title  flex justify-center m-3 before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
                     Contact Me
                 </h2>
-            </div>
-            <div className='flex flex-col gap-8 lg:gap-x-2 lg:flex-row'>
+            </div> */}
+            <div className='flex flex-col  lg:gap-x-2 lg:flex-row'>
               <TrackVisibility>
               {({ isVisible }) =>
-                <div className='flex flex-1 flex-col items-start space-y-2 mb-12 lg:mb-0 lg:pt-2 {isVisible ? "animate__animated animate__zoomIn" : ""}'>
+                <div className='flex flex-1 p-3  flex-col items-start space-y-2 mb-12 lg:mb-0 lg:pt-2 {isVisible ? "animate__animated animate__zoomIn" : ""}'>
                     {contact.map((item, index) => {const { icon, title, subtitle, description, href } = item;
                         return (
                             <div className='flex flex-col lg:flex-row gap-x-2' key={index}>
-                                <div className='text-accent rounded-sm w-10 h-5 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
+                                <div className=' rounded-sm w-10 h-5 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl'>
                                     <a href={href}>{icon}</a>
                                 </div>
                                 <div>
@@ -71,15 +74,19 @@ const Contact = () => {
                     })}
                 </div>}
               </TrackVisibility>
-                <form className='space-y-8 flex-row items-end' onSubmit={handleSubmit}>
-                    <div  className='flex flex-col  md:w-1/2  gap-4'>
-                        <input className='input rounded-2xl text-black' value={formDetails.fullName} type='text' onChange={(e) => onFormUpdate('fullName', e.target.value)} placeholder='Your name' />
-                        <input className='input rounded-2xl text-black' value={formDetails.email} type='email' onChange={(e) => onFormUpdate('email', e.target.value)} placeholder='Your email' />
+            </div>
+            <div className='flex justify-center'>
+            <form className='space-y-8 p-3 text-white   flex-row lg:items-start items-end' onSubmit={handleSubmit}>
+                    <div  className='flex flex-col   md:w-1/2  gap-4'>
+                        <input className='input  bg-slate-600 rounded-2xl' value={formDetails.fullName} type='text' onChange={(e) => onFormUpdate('fullName', e.target.value)} placeholder='Your name' />
+                        <input className='input  bg-slate-600 rounded-2xl' value={formDetails.email} type='email' onChange={(e) => onFormUpdate('email', e.target.value)} placeholder='Your email' />
                     </div>
                     <div className='flex flex-col gap-4 w-50'>
-                        <input className='input rounded-2xl text-black'  type='text' value={formDetails.subject} onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder='Subject' />
-                        <textarea className='textarea rounded-2xl text-black' value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} placeholder='Your message'></textarea>
-                        <button type="submit" className='btn m-2 btn-lg bg-black hover:bg-gray-hover rounded-2xl'>
+                        <input className='input  bg-slate-600 rounded-2xl '  type='text' value={formDetails.subject} onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder='Subject' />
+                        <textarea className='textarea  bg-slate-600 rounded-2xl' value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} placeholder='Your message'></textarea>
+                    </div>
+                    <div>
+                    <button type="submit" className='btn m-2 p-2 item-center justify-center btn-lg bg-black text-cyan-700 hover:bg-gray-hover rounded-2xl'>
                             <span>{buttonText}</span> 
                         </button>
                     </div>
@@ -89,7 +96,7 @@ const Contact = () => {
                             <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                         </Col>
                     }
-                </form>
+            </form>
                 {/* <form  className='bg-transpalent' onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1 gap-2">

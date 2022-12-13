@@ -3,9 +3,9 @@ import Image from '../images/hero/mine.png';
 
 const About = () => {
   return (
-    <section className='section  bg-gray-900  text-cyan-500' id='about'>
+    <section className='section  bg-cyan-900  text-black' id='about'>
        <h1 className='flex  justify-center'> About Me</h1>
-        <div className='container flex flex-col xl:flex-row gap-24'>
+        <div className='container flex flex-col xl:flex-row gap-5'>
           <img
             className='object-cover h-full w-[566px] md:mx-auto lg:mx-0 rounded-2xl'
             src={Image} alt=''/>
@@ -34,7 +34,7 @@ const About = () => {
               </div>
               
             </div>
-            <a href='#contact' className='btn text-2xl p-2 rounded-2xl bg-black my-3  transition-all'> Contact me</a>
+            <a href='#contact' className='btn text-2xl p-2 text-cyan-600 rounded-2xl bg-black my-3  transition-all'> Contact me</a>
           </div>
         </div>
       

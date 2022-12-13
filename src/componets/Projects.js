@@ -40,7 +40,7 @@ const Projects = () => {
                     })}
                 </ul>
             </nav>
-            <div className='grid gap-y-5 bg-gray-700 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
+            <div className='grid gap-y-5 bg-cyan-700 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-8'>
                 {projects.map((item) => {
                     return <Work item={item} key={item.id} />;
                 })}

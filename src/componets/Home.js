@@ -50,7 +50,7 @@ const Home = () => {
 
   return (
     <section id='home'
-    className='lg:h-[85vh] flex items-center bg-gray-900 text-cyan-400 lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'>
+    className='lg:h-[85vh] flex items-center bg-cyan-700 text-black lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'>
         <div className='container mx-auto h-full'>
             <div className='flex items-center h-full pt-8'>
             <TrackVisibility>
@@ -67,13 +67,13 @@ const Home = () => {
 
                     </p>
 
-                    <a  href={CV} download className='btn btn-md text-2xl p-3 rounded-2xl bg-black hover:bg-secondary-hover md:btn-lg transition-all'>
+                    <a  href={CV} download className='btn btn-md text-2xl p-3 rounded-2xl bg-black text-cyan-500 hover:bg-secondary-hover md:btn-lg transition-all'>
                         Download CV 
                         {/* <RiDownloadCloudFill size={25} /> */}
                     </a> 
                 </div>}
             </TrackVisibility>
-                <img  className='hidden lg:flex flex-1  rounded-2xl justify-end items-end h-full' src={WomanImg} alt='mine' />
+                <img  className='hidden lg:flex flex-1 rounded-2xl justify-end items-end h-full' src={WomanImg} alt='mine' />
             </div>
         </div>
     </section>

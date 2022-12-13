@@ -19,7 +19,7 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
-      <Experience />
+      
       <Contact />
       <Footer />
       <Scroll />
@@ -28,3 +28,6 @@ function App() {
 }
 
 export default App;
+
+
+{/* <Experience /> */}

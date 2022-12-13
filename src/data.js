@@ -94,17 +94,17 @@ export const projectsData = [
       code: "https://github.com/cindyung56/food-adventure",
       demo: 'https://cindyung56.github.io/food-adventure/'
     },
-    {
-      id: '3',
-      image: Project2,
-      name: 'Book club',
-      category: 'Full Stack',
-      demo: "https://secret-harbor-07074.herokuapp.com/",
-      code: 'https://github.com/latifah2022/book-club'
-    },
+    // {
+    //   id: '3',
+    //   image: Project2,
+    //   name: 'Book club',
+    //   category: 'Full Stack',
+    //   demo: "https://secret-harbor-07074.herokuapp.com/",
+    //   code: 'https://github.com/latifah2022/book-club'
+    // },
     
     {
-      id: '5',
+      id: '3',
       image: Project3,
       name: 'E-commerce',
       category: 'Backend',
@@ -114,8 +114,16 @@ export const projectsData = [
     {
       id: '4',
       image: Project4,
-      name: 'Portfolio',
+      name: 'Herison',
       category: 'web development',
+      demo: "https://github.com/latifah2022/Herison-code-rework",
+      code: 'https://latifah2022.github.io/Herison-code-rework/'
+    },
+    {
+      id: '4',
+      image: Project4,
+      name: 'Portfolio',
+      category: 'Frontend',
       demo: "https://latifah2022.github.io/my-first-portfolio/",
       code: 'https://github.com/latifah2022/my-first-portfolio'
     },
@@ -130,11 +138,27 @@ export const projectsData = [
     {
       id: '7',
       image: Project7,
-      name: 'To-do List',
+      name: 'Password Generator',
       category: 'Full Stack',
-      demo: "https://serene-falls-35131.herokuapp.com/",
-      code: 'https://github.com/christalledo/to-do-list-app'
+      demo: "https://latifah2022.github.io/password-generator/",
+      code: 'https://github.com/latifah2022/password-generator'
     },
+    // {
+    //   id: '7',
+    //   image: Project7,
+    //   name: 'To-do List',
+    //   category: 'Full Stack',
+    //   demo: "https://serene-falls-35131.herokuapp.com/",
+    //   code: 'https://github.com/christalledo/to-do-list-app'
+    // },
+    // {
+    //   id: '3',
+    //   image: Project2,
+    //   name: 'Book club',
+    //   category: 'Full Stack',
+    //   demo: "https://secret-harbor-07074.herokuapp.com/",
+    //   code: 'https://github.com/latifah2022/book-club'
+    // },
 ];
 
   
