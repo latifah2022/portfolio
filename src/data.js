@@ -9,7 +9,7 @@ import {
 
 //   // projects images
 import Project1 from './images/projects/p11.jpg';
-import Project2 from './images/projects/p12.jpg';
+//import Project2 from './images/projects/p12.jpg';
 import Project3 from './images/projects/p13.jpg';
 import Project4 from './images/projects/p18.jpg';
 import Project5 from './images/projects/p15.jpg';
@@ -116,8 +116,9 @@ export const projectsData = [
       image: Project4,
       name: 'Herison',
       category: 'web development',
-      demo: "https://github.com/latifah2022/Herison-code-rework",
-      code: 'https://latifah2022.github.io/Herison-code-rework/'
+      demo: 'https://latifah2022.github.io/Herison-code-rework/',
+      code: "https://github.com/latifah2022/Herison-code-rework"
+      
     },
     {
       id: '4',
@@ -151,14 +152,7 @@ export const projectsData = [
     //   demo: "https://serene-falls-35131.herokuapp.com/",
     //   code: 'https://github.com/christalledo/to-do-list-app'
     // },
-    // {
-    //   id: '3',
-    //   image: Project2,
-    //   name: 'Book club',
-    //   category: 'Full Stack',
-    //   demo: "https://secret-harbor-07074.herokuapp.com/",
-    //   code: 'https://github.com/latifah2022/book-club'
-    // },
+    // 
 ];
 
   

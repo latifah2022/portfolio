@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {  Col } from "react-bootstrap";
 import { contact } from "../data";
 import TrackVisibility from 'react-on-screen';
 
@@ -36,7 +36,7 @@ const Contact = () => {
         setButtonText("Send");
         let result = await response.json();
         setFormDetails(formInitialDetails);
-        if (result.code == 200) {
+        if (result.code === 200) {
           setStatus({ succes: true, message: 'Message sent successfully'});
         } else {
           setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -49,11 +49,7 @@ const Contact = () => {
                     Contact Me
         </h2>
         <div className='container justify-evenly flex flex-col xl:flex-row mx-auto '>
-            {/* <div className='flex flex-col items-center text-center'>
-                <h2 className='section-title  flex justify-center m-3 before:content-contact relative before:absolute before:opacity-40 before:-top-7 before:-left-40 before:hidden before:lg:block'>
-                    Contact Me
-                </h2>
-            </div> */}
+            
             <div className='flex flex-col  lg:gap-x-2 lg:flex-row'>
               <TrackVisibility>
               {({ isVisible }) =>
@@ -78,12 +74,12 @@ const Contact = () => {
             <div className='flex justify-center'>
             <form className='space-y-8 p-3 text-white   flex-row lg:items-start items-end' onSubmit={handleSubmit}>
                     <div  className='flex flex-col   md:w-1/2  gap-4'>
-                        <input className='input  bg-slate-600 rounded-2xl' value={formDetails.fullName} type='text' onChange={(e) => onFormUpdate('fullName', e.target.value)} placeholder='Your name' />
-                        <input className='input  bg-slate-600 rounded-2xl' value={formDetails.email} type='email' onChange={(e) => onFormUpdate('email', e.target.value)} placeholder='Your email' />
+                        <input className='input  bg-slate-800 rounded-2xl' value={formDetails.fullName} type='text' onChange={(e) => onFormUpdate('fullName', e.target.value)} placeholder='Your name' />
+                        <input className='input  bg-slate-800 rounded-2xl' value={formDetails.email} type='email' onChange={(e) => onFormUpdate('email', e.target.value)} placeholder='Your email' />
                     </div>
                     <div className='flex flex-col gap-4 w-50'>
-                        <input className='input  bg-slate-600 rounded-2xl '  type='text' value={formDetails.subject} onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder='Subject' />
-                        <textarea className='textarea  bg-slate-600 rounded-2xl' value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} placeholder='Your message'></textarea>
+                        <input className='input bg-slate-800 rounded-2xl '  type='text' value={formDetails.subject} onChange={(e) => onFormUpdate('subject', e.target.value)} placeholder='Subject' />
+                        <textarea className='textarea bg-slate-800 rounded-2xl' value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)} placeholder='Your message'></textarea>
                     </div>
                     <div>
                     <button type="submit" className='btn m-2 p-2 item-center justify-center btn-lg bg-black text-cyan-700 hover:bg-gray-hover rounded-2xl'>
@@ -97,32 +93,7 @@ const Contact = () => {
                         </Col>
                     }
             </form>
-                {/* <form  className='bg-transpalent' onSubmit={handleSubmit}>
-                  <Row>
-                    <Col size={12} sm={6} className="px-1 gap-2">
-                      <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="text" value={formDetails.lasttName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName', e.target.value)}/>
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="email" value={formDetails.email} placeholder="Email Address" onChange={(e) => onFormUpdate('email', e.target.value)} />
-                    </Col>
-                    <Col size={12} sm={6} className="px-1">
-                      <input type="tel" value={formDetails.phone} placeholder="Phone No." onChange={(e) => onFormUpdate('phone', e.target.value)}/>
-                    </Col>
-                    <Col size={12} className="px-1">
-                      <textarea rows="6" value={formDetails.message} placeholder="Message " onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
-                    </Col>
-                    {
-                      status.message &&
-                      <Col>
-                        <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
-                      </Col>
-                    }
-                  </Row>
-                </form> */}
+               
             </div>
         </div>
     </section>
